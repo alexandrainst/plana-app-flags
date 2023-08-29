@@ -19,14 +19,16 @@
       "targeting": {
         "if": [
           {
-            "in": [
-              "testserver",
-              {
-                "var": [
-                  "systemId"
-                ]
-              }
-            ]
+            "testserver": {
+              "in": [
+                "testserver",
+                {
+                  "var": [
+                    "systemId"
+                  ]
+                }
+              ]
+            }
           },
           "on",
           "off"
