@@ -1,6 +1,6 @@
 {
   "flags": {
-    "myBoolFlag": {
+    "singleRouteMode": {
       "state": "ENABLED",
       "variants": {
         "on": true,
@@ -81,7 +81,9 @@
         "if": [
           {
             "$ref": "emailWithFaas"
-          }, "binet", null
+          },
+          "binet",
+          null
         ]
       }
     },
@@ -119,16 +121,22 @@
                 25
               ]
             ]
-          }, null
+          },
+          null
         ]
       }
     }
   },
   "$evaluators": {
     "emailWithFaas": {
-      "in": ["@faas.com", {
-        "var": ["email"]
-      }]
+      "in": [
+        "@faas.com",
+        {
+          "var": [
+            "email"
+          ]
+        }
+      ]
     }
   }
 }
