@@ -1,7 +1,0 @@
-flags:
-  singleRouteMode:
-   state: ENABLED
-   variants: 
-     on: true
-     off: false
-   defaultVariant: on
