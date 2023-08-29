@@ -20,12 +20,10 @@
         "if": [
           {
             "testserver": {
-              "in": [
+              "==": [
                 "testserver",
                 {
-                  "var": [
-                    "systemId"
-                  ]
+                  "var": "systemId"
                 }
               ]
             }
