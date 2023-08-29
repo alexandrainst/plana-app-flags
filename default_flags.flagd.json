@@ -9,7 +9,7 @@
       },
       "defaultVariant": "on"
     },
-    "toggleDebug": {
+    "allowDebug": {
       "state": "ENABLED",
       "variants": {
         "on": true,
