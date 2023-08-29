@@ -7,7 +7,23 @@
         "on": true,
         "off": false
       },
-      "defaultVariant": "on"
+      "defaultVariant": "on",
+      "targeting": {
+        "if": [
+          {
+            "testserver": {
+              "==": [
+                "testserver",
+                {
+                  "var": "systemId"
+                }
+              ]
+            }
+          },
+          "on",
+          "off"
+        ]
+      }
     },
     "allowDebug": {
       "state": "ENABLED",
