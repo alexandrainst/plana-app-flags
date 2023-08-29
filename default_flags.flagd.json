@@ -8,6 +8,28 @@
         "off": false
       },
       "defaultVariant": "on"
+    },
+    "toggleDebug": {
+      "state": "ENABLED",
+      "variants": {
+        "on": true,
+        "off": false
+      },
+      "defaultVariant": "off",
+      "targeting": {
+        "if": [
+          {
+            "startsWith": [
+              {
+                "var": "systemId"
+              },
+              "testserver"
+            ]
+          },
+          "on",
+          "off"
+        ]
+      }
     }
   }
 }
