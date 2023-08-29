@@ -19,11 +19,13 @@
       "targeting": {
         "if": [
           {
-            "startsWith": [
+            "in": [
+              "testserver",
               {
-                "var": "systemId"
-              },
-              "testserver"
+                "var": [
+                  "systemId"
+                ]
+              }
             ]
           },
           "on",
