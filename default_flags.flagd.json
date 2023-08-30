@@ -48,6 +48,14 @@
           "off"
         ]
       }
+    },
+    "allowBiometricSignin": {
+      "state": "ENABLED",
+      "variants": {
+        "on": true,
+        "off": false
+      },
+      "defaultVariant": "off"
     }
   }
 }
