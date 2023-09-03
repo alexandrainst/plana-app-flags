@@ -1,0 +1,7 @@
+services:
+  flagd:
+    image: ghcr.io/open-feature/flagd:v0.6.3
+    restart: unless-stopped
+    command: start --uri 'https://raw.githubusercontent.com/alexandrainst/plana-app-flags/main/default_flags.flagd.json'
+    ports:
+      - "8013:8013"
