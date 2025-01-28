@@ -52,6 +52,28 @@
         "off": false
       },
       "defaultVariant": "off"
+    },
+    "showAllRoutes": {
+      "state": "ENABLED",
+      "variants": {
+        "on": true,
+        "off": false
+      },
+      "defaultVariant": "off",
+      "targeting": {
+        "if": [
+          {
+            "==": [
+              "testserver",
+              {
+                "var": "systemId"
+              }
+            ]
+          },
+          "off",
+          "off"
+        ]
+      }
     }
   }
 }
