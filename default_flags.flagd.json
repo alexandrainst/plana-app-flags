@@ -4,32 +4,26 @@
     "singleRouteMode": {
       "state": "ENABLED",
       "variants": {
-        "on": true,
-        "off": false
+        "true": true,
+        "false": false
       },
-      "defaultVariant": "on",
+      "defaultVariant": "false",
       "targeting": {
-        "if": [
+        "==": [
+          "testserver",
           {
-            "==": [
-              "testserver",
-              {
-                "var": "systemId"
-              }
-            ]
-          },
-          "on",
-          "off"
+            "var": "systemId"
+          }
         ]
       }
     },
     "allowDebug": {
       "state": "ENABLED",
       "variants": {
-        "on": true,
-        "off": false
+        "true": true,
+        "false": false
       },
-      "defaultVariant": "off",
+      "defaultVariant": "false",
       "targeting": {
         "==": [
           "testserver",
@@ -42,10 +36,10 @@
     "allowBiometricSignin": {
       "state": "ENABLED",
       "variants": {
-        "on": true,
-        "off": false
+        "true": true,
+        "false": false
       },
-      "defaultVariant": "off"
+      "defaultVariant": "false"
     },
     "showAllRoutes": {
       "state": "ENABLED",
@@ -58,7 +52,7 @@
         "or": [
           {
             "==": [
-              "testserver2",
+              "testserver",
               {
                 "var": "systemId"
               }
