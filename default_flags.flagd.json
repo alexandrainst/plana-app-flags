@@ -55,20 +55,24 @@
       },
       "defaultVariant": "off",
       "targeting": {
-        "or": [{"==": [
-              "testserver2",
+        "or": [
+          {
+            "==": [
+              "testserver",
               {
                 "var": "systemId"
               }
-            ]}, {
+            ]
+          },
+          {
             "==": [
               "testserver1",
               {
                 "var": "systemId"
               }
             ]
-          }]
-        
+          }
+        ]
       }
     }
   }
