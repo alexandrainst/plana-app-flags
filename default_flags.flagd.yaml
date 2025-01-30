@@ -1,41 +1,42 @@
+# yaml-language-server: $schema=https://flagd.dev/schema/v0/flags.json
 flags:
   singleRouteMode:
-    state: "ENABLED"
+    state: 'ENABLED'
     variants:
       true: true
       false: false
-    defaultVariant: "false"
+    defaultVariant: 'false'
     targeting:
-      "==":
-        - "testserver"
-        - var: "systemId"
+      '==':
+        - 'testserver'
+        - var: 'systemId'
   allowDebug:
-    state: "ENABLED"
+    state: 'ENABLED'
     variants:
       true: true
       false: false
-    defaultVariant: "false"
+    defaultVariant: 'false'
     targeting:
-      "==":
-        - "testserver"
-        - var: "systemId"
+      '==':
+        - 'testserver'
+        - var: 'systemId'
   allowBiometricSignin:
-    state: "ENABLED"
+    state: 'ENABLED'
     variants:
       true: true
       false: false
-    defaultVariant: "false"
+    defaultVariant: 'false'
   showAllRoutes:
-    state: "ENABLED"
+    state: 'ENABLED'
     variants:
       true: true
       false: false
-    defaultVariant: "false"
+    defaultVariant: 'false'
     targeting:
       or:
-        - "==":
-            - "testserver"
-            - var: "systemId"
-        - "==":
-            - "testserver1"
-            - var: "systemId"
+        - '==':
+            - 'testserver'
+            - var: 'systemId'
+        - '==':
+            - 'testserver1'
+            - var: 'systemId'
