@@ -31,7 +31,12 @@
       },
       "defaultVariant": "off",
       "targeting": {
-        "==": ["testserver", {"var": "systemId"}]
+        "==": [
+          "testserver",
+          {
+            "var": "systemId"
+          }
+        ]
       }
     },
     "allowBiometricSignin": {
@@ -50,17 +55,11 @@
       },
       "defaultVariant": "off",
       "targeting": {
-        "if": [
+        "==": [
+          "testserver",
           {
-            "==": [
-              "testserver",
-              {
-                "var": "systemId"
-              }
-            ]
-          },
-          "on",
-          "off"
+            "var": "systemId"
+          }
         ]
       }
     }
