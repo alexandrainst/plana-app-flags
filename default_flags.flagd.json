@@ -50,10 +50,10 @@
     "showAllRoutes": {
       "state": "ENABLED",
       "variants": {
-        "on": true,
-        "off": false
+        "true": true,
+        "false": false
       },
-      "defaultVariant": "off",
+      "defaultVariant": "false",
       "targeting": {
         "or": [
           {
