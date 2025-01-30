@@ -53,7 +53,7 @@
         "if": [
           {
             "==": [
-              "testserver2",
+              "testserver",
               {
                 "var": "systemId"
               }
