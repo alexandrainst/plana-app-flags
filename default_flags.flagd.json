@@ -54,26 +54,12 @@
         "false": false
       },
       "defaultVariant": "false",
-      "targeting": {
-        "or": [
-          {
-            "==": [
+      "targeting": {"==": [
               "testserver",
               {
                 "var": "systemId"
               }
-            ]
-          },
-          {
-            "==": [
-              "testserver1",
-              {
-                "var": "systemId"
-              }
-            ]
-          }
-        ]
-      }
+            ]}
     }
   }
 }
