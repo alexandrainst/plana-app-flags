@@ -10,7 +10,7 @@
       "defaultVariant": "false",
       "targeting": {
         "==": [
-          "testserver",
+          "testserver-not",
           {
             "var": "systemId"
           }
