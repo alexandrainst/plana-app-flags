@@ -60,7 +60,7 @@
           },
           {
             "==": [
-              "testserver1",
+              "svanesyd",
               {
                 "var": "systemId"
               }
