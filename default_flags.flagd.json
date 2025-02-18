@@ -52,7 +52,7 @@
         "or": [
           {
             "==": [
-              "testserver",
+              "nottestserver",
               {
                 "var": "systemId"
               }
